@@ -2,7 +2,7 @@ import React from 'react';
 import {
   MDBFooter,   
   MDBIcon
-} from 'mdb-react-ui-kit';
+} from 'mdbreact';
 
 export default function Footer() {
   return (

@@ -13,7 +13,7 @@ export default function App() {
     <MDBCarousel showIndicators showControls fade>
       <MDBCarouselInner>
         <MDBCarouselItem className='active'>
-          <MDBCarouselElement src='../assets/img/fboatexp.jpg' alt='...' />
+          <MDBCarouselElement src='../assets/img/fboatdemo.jpg' alt='...' />
           <MDBCarouselCaption>
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
