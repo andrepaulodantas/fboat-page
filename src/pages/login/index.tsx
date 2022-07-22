@@ -1,20 +1,16 @@
-import { Component } from "react";
-import FormRegistration from "../../components/FormRegistration/FormRegistration";
+import React from "react";
+import App from "../../App";
 
-class Login extends Component {    
+class Login extends  React.Component  {    
 
-    criarNota(titulo, texto){
-        console.log(`uma nova nota foi criada ` + titulo + " " + texto)
-    }
 
     render() { 
         return (             
             <div>                
                 <h1>Login</h1>
-                <p>This is the login page</p>
-                <FormRegistration criarNota={this.criarNota}/>
+                <p>This is the login page</p>  
+                <App />               
             </div>
-
         );
     }
 }

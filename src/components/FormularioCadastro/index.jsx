@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+/* eslint-disable react/prop-types */
+import React from "react";
 import "./estilo.css";
 
-class FormRegistration extends Component {
+class FormularioCadastro extends React.Component {
+
 
   constructor(props){
     super(props);
@@ -51,8 +53,7 @@ class FormRegistration extends Component {
   }
 }
 
-
-export default FormRegistration;
+export default FormularioCadastro;
 
 
 
