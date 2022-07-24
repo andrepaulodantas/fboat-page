@@ -4,7 +4,7 @@ import CardNota from "../CardNota";
 import "./estilo.css";
 class ListaDeNotas extends  React.Component  {
  
-  render() {
+   render() {
     return (
       <ul className="lista-notas">
         {this.props.notas.map((nota, index) => {

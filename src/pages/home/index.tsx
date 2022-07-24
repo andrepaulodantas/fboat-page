@@ -6,7 +6,7 @@ import {
   MDBCarouselElement,
   MDBCarouselCaption,
 } from 'mdb-react-ui-kit';
-import Cards from '../../components/cards';
+import Card from '../../components/Card';
 
 export default function App() {
   return (
@@ -35,8 +35,8 @@ export default function App() {
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
-      </MDBCarouselInner>
-      <Cards />
+      </MDBCarouselInner>  
+      <Card />  
     </MDBCarousel>
   );
 }

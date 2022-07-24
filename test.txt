@@ -1,0 +1,60 @@
+import React, { ChangeEvent } from "react";
+import "./estilo.css";
+
+class FormularioCadastro extends React.Component {
+
+    constructor(props: {} | Readonly<{}>) {
+        super(props);
+        this.state = {
+            nome: "",
+            email: "",
+            senha: "",
+            confirmaSenha: "",
+            erro: "",
+            erroNome: "",
+            erroEmail: "",
+            erroSenha: "",
+            erroConfirmaSenha: ""
+        };
+    }
+
+    handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
+    }
+
+    handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const { nome, email, senha, confirmaSenha } = this.state;
+        if (nome === "") {
+            this.setState({ erroNome: "Nome é obrigatório" });
+        } else {
+            this.setState({ erroNome: "" });
+        }
+        if (email === "") {
+            this.setState({ erroEmail: "Email é obrigatório" });
+        } else {
+            this.setState({ erroEmail: "" });
+        }
+        if (senha === "") {
+            this.setState({ erroSenha: "Senha é obrigatória" });
+        } else {
+            this.setState({ erroSenha: "" });
+        }
+        if (confirmaSenha === "") {
+            this.setState({ erroConfirmaSenha: "Confirmação de senha é obrigatória" });
+        } else {
+            this.setState({ erroConfirmaSenha: "" });
+        }
+        if (nome !== "" && email !== "" && senha !== "" && confirmaSenha !== "") {
+            if (senha === confirmaSenha) {
+                this.setState({ erro: "" });
+                this.props.onSubmit(this.state);
+            } else {
+}
+
+
+export default FormularioCadastro;
+
+
+
