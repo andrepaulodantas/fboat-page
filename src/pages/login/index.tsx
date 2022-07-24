@@ -1,5 +1,4 @@
 import React from "react";
-import App from "../../App";
 
 class Login extends  React.Component  {    
 
@@ -7,8 +6,7 @@ class Login extends  React.Component  {
         return (             
             <div>                
                 <h1>Login</h1>
-                <p>This is the login page</p>  
-                <App />               
+                <p>This is the login page</p>                           
             </div>
         );
     }
