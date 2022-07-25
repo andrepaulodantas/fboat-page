@@ -1,29 +1,36 @@
+import { ReactNode } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-function CardBody() {
+type CardBodyProps = {
+  title: string;
+  text: string;
+  children?: ReactNode;
+};
+
+const CardBody = ({ title, text, children }: CardBodyProps) => {
   return (
     <CardGroup>
       <Card>        
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+           {text}
           </Card.Text>
+          {children}
         </Card.Body>
-        <Card.Img variant="top" src="../assets/img/const.jpg" />
+       <Card.Img variant="top" src="../assets/img/const.jpg" />
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
       <Card>        
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+          {text}
           </Card.Text>
+          {children}
         </Card.Body>
         <Card.Img variant="top" src="../assets/img/montagem.jpg" />
         <Card.Footer>
@@ -32,12 +39,11 @@ function CardBody() {
       </Card>
       <Card>       
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          {text}
           </Card.Text>
+          {children}
         </Card.Body>
         <Card.Img variant="top" src="../assets/img/teste.jpg" />
         <Card.Footer>

@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -6,9 +5,11 @@ import {
   MDBCarouselElement,
   MDBCarouselCaption,
 } from 'mdb-react-ui-kit';
-import Card from '../../components/Card';
+import React from 'react';
+import Card from '../../components/CardBody';
 
-export default function App() {
+class home extends React.Component {
+  render() {
   return (
     <MDBCarousel showIndicators showControls fade>
       <MDBCarouselInner>
@@ -36,7 +37,14 @@ export default function App() {
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>  
-      <Card />  
+      <Card 
+      title='Construção'
+      text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.'    
+      /> 
+     
     </MDBCarousel>
   );
+ }
 }
+
+export default home;
