@@ -1,0 +1,34 @@
+.form {
+    display:flex;
+    flex-direction:column;
+    grid-area: nova-tarefa;    
+    background-color: #ca5454;
+    border-radius: 100px;
+    box-shadow: 2px 4px 4px #0000009F;
+    padding: 15px;  
+    margin-top: 15%;
+    margin-bottom: 16%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 2.25rem;
+      padding: 24px;
+      box-sizing: border-box;
+
+    }
+    @media screen and (min-width: 400px) {
+      font-size: 2.5rem;
+      padding: 32px;
+      box-sizing: border-box;
+    }       
+
+  
+     
+ 
+  }

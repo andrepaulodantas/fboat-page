@@ -1,15 +1,22 @@
 import React from "react";
-
-class Login extends  React.Component  {    
-
-    render() { 
-        return (             
-            <div>                
-                <h1>Login</h1>
-                <p>This is the login page</p>                           
-            </div>
-        );
-    }
+import style from "./login.module.scss";
+class Login extends React.Component {
+  render() {
+    return (
+      <div>
+        <section className="">
+          <h1 className="">Login</h1>
+          <form className={style.form}>
+            <label className={style.label}>Email</label>
+            <input  className={style.input} type="email" />
+            <label>Password</label>
+            <input className={style.input} type="password" />
+            <button type="submit" >Submit</button>
+          </form>
+        </section>
+      </div>
+    );
+  }
 }
- 
-export default Login ;
+
+export default Login;
