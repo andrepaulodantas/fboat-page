@@ -22,8 +22,8 @@ export default function header() {
               <NavLink eventKey="2" as={Link} to="/publications">
                 Publications
               </NavLink>
-              <NavLink eventKey="3" as={Link} to="/events">
-                Events
+              <NavLink eventKey="3" as={Link} to="/Card">
+                Card
               </NavLink>
             </Nav>
             <Nav>
